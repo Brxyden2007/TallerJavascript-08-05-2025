@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="data/superheroes.js" defer></script>
+  <script src="js/search-component.js" defer></script>
+  <script src="js/card-component.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <link rel="shortcut icon" href="img/portadaMarvelDC.jpeg" type="image/x-icon">
+  <title>Web Page - Superheroes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Buscador de Superheroes</h1>
+    
+    <search-component></search-component>
+    
+    <div class="characters-container" id="charactersContainer"></div>
+  </div>
+
+  <character-modal id="characterModal"></character-modal>
+</body>
+</html>
