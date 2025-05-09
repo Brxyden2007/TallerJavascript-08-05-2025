@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const charactersContainer = document.getElementById("charactersContainer")
-    const characterModal = document.getElementById("characterModal")
+    const containerShowCharacters = document.getElementById("containerShowCharacters")
+    const cardsModal = document.getElementById("cardsModal")
   
     // Aqui se cargan los personajes que estan en la data
     loadCharacters(window.comicCharacters)
@@ -27,20 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const character = window.comicCharacters.find((char) => char.id === characterId)
   
       if (character) {
-        characterModal.openModal(character)
+        cardsModal.openModal(character)
       }
     })
   
     // Carga los personajes
     function loadCharacters(characters) {
       // Con esto limpio completamente el contenedor
-      charactersContainer.innerHTML = ""
+      containerShowCharacters.innerHTML = ""
   
       // Agrego y creo tarjetas de personaje (ordenado)
       characters.forEach((character) => {
         const characterCard = document.createElement("character-card")
         characterCard.setAttribute("character-data", JSON.stringify(character))
-        charactersContainer.appendChild(characterCard)
+        containerShowCharacters.appendChild(characterCard)
       })
     }
   })

@@ -21,28 +21,29 @@ class CharacterCard extends HTMLElement {
       this.shadowRoot.innerHTML = `
         <style>
           .character-card {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255);
             border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-          }
+            }
           
           .character-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            transform: translateY(-15px);
+            border: 5px solid yellow;
           }
           
           .card-content {
             padding: 20px;
+            border: 5px solid yellow;
           }
           
           .character-name {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 15px;
-            background-color: lightgray;
-            color: #222;
+            background-color: black;
+            border: 5px solid yellow;
+            color: white;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -55,23 +56,26 @@ class CharacterCard extends HTMLElement {
             border-radius: 8px;
             margin-bottom: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          }
+            border: 5px solid yellow;
+            }
           
           .character-info {
             margin-bottom: 15px;
+            font-size: 19px;
           }
           
           .info-label {
             font-weight: bold;
-            color: #555;
-            font-size: 16px;
+            color: black;
+            font-size: 22px;
+            text-transform: uppercase;
           }
           
           .character-house {
             display: inline-block;
             padding: 5px 10px;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 19px;
             font-weight: bold;
             margin-bottom: 12px;
           }
@@ -79,42 +83,47 @@ class CharacterCard extends HTMLElement {
           .house-dc {
             background-color: #0476F2;
             color: white;
+            border: 5px solid yellow;
           }
           
           .house-marvel {
             background-color: #ED1D24;
             color: white;
+            border: 5px solid yellow;
           }
           
           .character-appearance {
-            font-size: 16px;
+            font-size: 21px;
             color: #444;
             margin-bottom: 12px;
           }
           
           .character-description {
-            font-size: 16px;
+            font-size: 24px;
             color: #333;
             margin-bottom: 20px;
             line-height: 1.5;
           }
           
           .see-more-btn {
-            background-color: #333;
+            background-color: black;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.1s ease;
             width: 100%;
             text-transform: uppercase;
             letter-spacing: 1px;
+            border: 5px solid yellow;
           }
           
           .see-more-btn:hover {
-            background-color: #555;
+            background-color: white;
+            color: black;
+            border: 5px solid gold;
           }
         </style>
         

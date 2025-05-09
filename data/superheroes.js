@@ -25,7 +25,7 @@ const comicCharacters = [
       id: 3,
       nombre: "Spider-Man",
       nombreClave: "Peter Parker",
-      casa: "Marvel",
+      casa: "MARVEL",
       primeraAparicion: "Amazing Fantasy #15 (1962)",
       descripcionBreve: "Joven con poderes arácnidos y un gran sentido de la responsabilidad.",
       descripcionCompleta:
@@ -47,7 +47,7 @@ const comicCharacters = [
       id: 5,
       nombre: "Iron Man",
       nombreClave: "Tony Stark",
-      casa: "Marvel",
+      casa: "MARVEL",
       primeraAparicion: "Tales of Suspense #39 (1963)",
       descripcionBreve: "Genio, multimillonario, playboy y filántropo con una armadura tecnológica avanzada.",
       descripcionCompleta:
@@ -58,7 +58,7 @@ const comicCharacters = [
         id: 6,
         nombre: "Black Panther",
         nombreClave: "T'Challa",
-        casa: "Marvel",
+        casa: "MARVEL",
         primeraAparicion: "Fantastic Four #52 (1966)",
         descripcionBreve: "Rey de Wakanda y un poderoso superhéroe, conocido por su inteligencia, habilidades de combate.",
         descripcionCompleta:
